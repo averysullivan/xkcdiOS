@@ -1,0 +1,9 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/FLAnimatedImage" "${PODS_ROOT}/Headers/Public/Facade" "${PODS_ROOT}/Headers/Public/OHHTTPStubs" "${PODS_ROOT}/Headers/Public/Realm" "${PODS_ROOT}/Headers/Public/SDWebImage"
+LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/AFNetworking-iOS8.0" "$PODS_CONFIGURATION_BUILD_DIR/FLAnimatedImage-iOS8.0" "$PODS_CONFIGURATION_BUILD_DIR/Facade-iOS8.0" "$PODS_CONFIGURATION_BUILD_DIR/OHHTTPStubs-iOS8.0" "$PODS_CONFIGURATION_BUILD_DIR/Realm-iOS8.0" "$PODS_CONFIGURATION_BUILD_DIR/SDWebImage-iOS8.0" "${PODS_ROOT}/Realm/core"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/FLAnimatedImage" -isystem "${PODS_ROOT}/Headers/Public/Facade" -isystem "${PODS_ROOT}/Headers/Public/OHHTTPStubs" -isystem "${PODS_ROOT}/Headers/Public/Realm" -isystem "${PODS_ROOT}/Headers/Public/SDWebImage"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworking-iOS8.0" -l"FLAnimatedImage-iOS8.0" -l"Facade-iOS8.0" -l"OHHTTPStubs-iOS8.0" -l"Realm-iOS8.0" -l"SDWebImage-iOS8.0" -l"c++" -l"realmcore-ios" -l"z" -framework "CFNetwork" -framework "CoreGraphics" -framework "Foundation" -framework "ImageIO" -framework "MobileCoreServices" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
